@@ -1,0 +1,26 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border: solid 1px red;
+}
+
+::-webkit-scrollbar-track {
+  width: 6px;
+  background: #e3e3e3;
+  border: solid 1px lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: solid 1px lightcoral;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  height: 6px;
+  width: 6px;
+  background: red;
+}

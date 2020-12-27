@@ -1,0 +1,40 @@
+<div class="toc-container">
+  <div class="sticky-container">
+    <%- toc(page.content, { list_number: true }) %>
+  </div>
+</div>
+<style>
+  @media (max-width: 1400px) {
+    .toc-container {
+      display: none;
+    }
+  }
+  .toc-container {
+    /* border: solid 1px; */
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: -250px;
+    top: 0;
+  }
+  .toc-container li {
+    list-style: none;
+  }
+  .toc-container ol {
+    padding-left: 15px;
+  }
+  .toc-container .toc-link {
+    display: flex;
+  }
+  .toc-container .toc-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+  }
+  .sticky-container {
+    position: sticky;
+    margin-top: 84px;
+    top: 20px;
+  }
+</style>

@@ -24,6 +24,7 @@
 .post code {
   background: #eee;
   text-shadow: 0 1px #fff;
+  border-radius: 3px;
   padding: 0 0.3em;
 }
 .post pre code {

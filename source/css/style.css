@@ -1,3 +1,43 @@
+/* ============ custom start ============= */
+@font-face {
+  font-family:"Blogger Sans";
+  src:url('/fonts/blogger-sans/BloggerSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+p::selection, p *::selection {
+  background: #fbfcc3;
+}
+.post code {
+  /* background: #fbfcc3; */
+  background: #fbefaa;
+  text-shadow: 0 1px #fff;
+  border-radius: 3px;
+  padding: 0 0.3em;
+  font-size: 12px;
+}
+.post pre code {
+  background: none;
+  text-shadow: none;
+  /* padding: 0; */
+  padding: 16px;
+}
+/* ============ custom end ============= */
+.post table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.post table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+.post table td, .post table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+.post table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
 h2, h3, h4, h5 {
   margin: 2em 0 1em; }
 
@@ -7,7 +47,7 @@ html, body {
 body {
   background: #f9f9f9;
   color: #303030;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Blogger Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 19px;
@@ -263,8 +303,8 @@ section.post {
   section.post blockquote {
     padding: 0 1em;
     margin: 14px 0;
-    border: 2px dashed #d0dfda;
-    border-radius: 5px;
+    border: 1px dashed #d0dfda;
+    /* border-radius: 5px; */
     color: #606060;
     background: #f9f9f9;
     -webkit-transition: all, 0.3s;
@@ -277,9 +317,9 @@ section.post {
 
 pre {
   word-wrap: break-word;
-  color: #eee;
-  background: #29281e;
-  padding: 1em;
+  /* color: #eee; */
+  background: #f5f7f9;
+  /* padding: 1em; */
   border-radius: 5px;
   width: 100%;
   line-height: 1.2em;
