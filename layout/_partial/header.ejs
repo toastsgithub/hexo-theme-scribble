@@ -1,5 +1,18 @@
 <header>
-  <a id='go-back-home' href='<%- url_for() %>'><img src='/images/scribble.png' alt='Home' width='53' height='59'></a>
-  <p><%= theme.title %></p>
-  <p><%= theme.description %></p>
+    <a id='go-back-home' href='<%- url_for() %>'><img src='/images/scribble.png' alt='Home' width='53' height='59'></a>
+    <p>
+        <%= theme.title %>
+    </p>
+    <p>
+        <%= theme.description %>
+    </p>
+    <div id="search-container">
+        <div class="search-dialog">
+            <div class="header">搜索</div>
+            <div class="input">
+                <input type="text" placeholder="输入关键词">
+            </div>
+            <div class="result"></div>
+        </div>
+    </div>
 </header>
