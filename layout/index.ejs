@@ -5,7 +5,7 @@
   </head>
   <body>
     <%- partial('_partial/header') %>
-    <div id='container'>
+    <div id='list-container'>
       <%- partial('_partial/links') %>
       <div class='content'>
         <ul class='posts'>
@@ -13,6 +13,11 @@
           <li>
             <small class='datetime muted' data-time='<%= post.date %>'><%- date(post.date, config.date_format) %></small>
             <a href='<%- url_for(post.path) %>'><%= post.title %></a>
+            <small style="float: right;">
+              <% post.tags.each(function(tag){ %>
+              <a href="<%- tag.permalink %>"><%- tag.name %></a>
+              <% }) %>
+            </small>
           </li>
           <% }) %>
         </ul>

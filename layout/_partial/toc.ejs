@@ -1,27 +1,28 @@
 <div class="toc-container">
   <div class="sticky-container">
+    <div class="header">Table Of Content</div>
     <%- toc(page.content, { list_number: true }) %>
   </div>
 </div>
 <style>
   @media (max-width: 1400px) {
     .toc-container {
-      display: none;
+      /* display: none; */
     }
   }
   .toc-container {
-    /* border: solid 1px; */
     width: 200px;
-    height: 100%;
-    position: absolute;
-    right: -250px;
+    height: auto;
     top: 0;
+    font-weight: 900;
+    margin-left: 10px;
   }
   .toc-container li {
     list-style: none;
   }
-  .toc-container ol {
-    padding-left: 15px;
+  .toc-container > .sticky-container > ol {
+    padding: 15px;
+    margin: 0;
   }
   .toc-container .toc-link {
     display: flex;
@@ -34,7 +35,15 @@
   }
   .sticky-container {
     position: sticky;
-    margin-top: 84px;
+    /* margin-top: 84px; */
     top: 20px;
+    border: solid 1px #efefef;
+    background: white;
+  }
+  .toc-container .header {
+    background: white;
+    padding: 30px 15px;
+    height: 24px;
+    border-bottom: solid 1px #efefef;
   }
 </style>
